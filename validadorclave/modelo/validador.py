@@ -18,7 +18,9 @@ class ReglaValidacion(ABC):
     def _contiene_numero(sel, clave: strc)-> bool:
             return any(char.isdigit()for char in clave )
 
-
+@abstractmethod
+def es_valida(self, clave: str) -> bool:
+ pass
 
 
 
